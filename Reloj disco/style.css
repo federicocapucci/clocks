@@ -1,0 +1,164 @@
+body {
+    width: 100vh;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    box-shadow: 0px 0px 0px black;
+}
+
+.container {
+    position: relative;
+    width: 95%;
+    height: 95%;
+    background-color: white;
+    margin: 10px;
+    left: 30%;
+    border-radius: 50%;
+    background: radial-gradient(yellow, orange);
+    box-shadow: 5px 5px 30px 10px yellow;
+    animation: colores 43200s ease-in-out infinite;
+}
+
+@keyframes colores {
+    0% {
+        background: darkblue;
+        box-shadow: 5px 5px 30px 15px darkblue;
+    }
+    50% {
+        background: yellow;
+        box-shadow: 5px 5px 30px 30px orange;
+    }
+    100% {
+        background: darkblue;
+        box-shadow: 5px 5px 30px 15px darkblue;
+    }
+}
+
+.segundocontainer {
+    position: absolute;
+    width: 95%;
+    height: 95%;
+    border-radius: 50%;
+    box-sizing: border-box;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.segundo {
+    height: 100%;
+    width: 100%;
+    animation: segundo 60s linear infinite;
+    animation-timing-function: steps(60);
+    border-radius: 50%;
+}
+
+@keyframes segundo {
+    from {
+        transform: rotate(0deg)
+    }
+    to {
+        transform: rotate(-360deg)
+    }
+}
+
+.minutocontainer {
+    position: absolute;
+    width: 77.5%;
+    height: 77.5;
+    border-radius: 50%;
+    box-sizing: border-box;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.minuto {
+    height: 100%;
+    width: 100%;
+    animation: minuto 3600s linear infinite;
+    border-radius: 50%;
+}
+
+@keyframes minuto {
+    from {
+        transform: rotate(0deg)
+    }
+    to {
+        transform: rotate(-360deg)
+    }
+}
+
+.horacontainer {
+    position: absolute;
+    width: 60%;
+    height: 60%;
+    border-radius: 50%;
+    box-sizing: border-box;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50.5%, -50%);
+}
+
+.hora {
+    height: 100%;
+    width: 100%;
+    animation: hora 86400s linear infinite;
+    border-radius: 50%;
+}
+
+@keyframes hora {
+    from {
+        transform: rotate(0deg)
+    }
+    to {
+        transform: rotate(-360deg)
+    }
+}
+
+.needle {
+    position: absolute;
+    width: 3px;
+    height: 44vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -101%);
+    background: linear-gradient(225deg, #511, #411);
+    box-shadow: 5px 5px 5px gray;
+}
+
+.dot {
+    position: absolute;
+    width: 5vh;
+    height: 5vh;
+    border: 3px solid #411;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    background: linear-gradient(225deg, #511, darkred);
+    border-radius: 50%;
+    box-shadow: 3px 3px 5px gray;
+}
+
+* {
+    box-shadow: 8px 10px 20px #333;
+}
+
+a {
+    top: 20px;
+    left: 10px;
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    color: red;
+    text-decoration: none;
+    padding: 0 5px;
+}
+
+a:hover {
+    padding: 2ps 5px;
+    background-color: red;
+    color: white;
+    border-radius: 20px;
+}
